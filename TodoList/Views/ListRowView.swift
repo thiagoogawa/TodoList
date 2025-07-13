@@ -4,22 +4,29 @@
 //
 //  Created by Thiago Ogawa on 13/07/25.
 //
-
 import SwiftUI
 
 struct ListRowView: View {
-    
-    let title: String
+    let item: ItemModel
     
     var body: some View {
         HStack {
-            Image(systemName: "checkmark.circle")
-            Text(title)
+            Image(systemName: item.isCompleted ? "checkmark.circle" : "circle")
+                .foregroundStyle(item.isCompleted ? .green : .red)
+            Text(item.title)
             Spacer()
         }
+        .font(.title2)
+        .padding(.vertical, 8)
     }
 }
 
-#Preview {
-    ListRowView(title: "This is the first title")
+struct ListRowView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            ListRowView(item: ItemModel(title: "First item!", isCompleted: false))
+            ListRowView(item: ItemModel(title: "Completed item!", isCompleted: true))
+        }
+        .previewLayout(.sizeThatFits)
+    }
 }
