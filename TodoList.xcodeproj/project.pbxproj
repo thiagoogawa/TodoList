@@ -32,8 +32,8 @@
 		DEDEAC262E2400700037F906 = {
 			isa = PBXGroup;
 			children = (
-				DEDEAC312E2400700037F906 /* TodoList */,
 				DEDEAC302E2400700037F906 /* Products */,
+				DEDEAC312E2400700037F906 /* TodoList */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,7 +269,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = thigas.TodoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -297,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = thigas.TodoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
